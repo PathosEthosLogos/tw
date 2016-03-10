@@ -1,0 +1,53 @@
+sv_name "Pathos 1v1 DM (& CTF) Virginia"
+sv_port 8303
+sv_motd "Please thank foxlet when you see him!"
+sv_rcon_password ""
+sv_rcon_mod_password ""
+
+sv_scorelimit 10
+sv_spectator_slots 14
+#sv_map dm_demonface
+sv_map dm1
+
+sv_gametype dm
+sv_inactivekick_time 5 #minutes
+sv_inactivekick 2
+sv_timelimit 5
+sv_tournament_mode 1
+sv_powerups 0
+sv_mute_duration 60
+sv_vote_spectate_rejoindelay 1
+sv_vote_kick_min 2
+sv_max_clients 16
+sv_spamprotection 1
+
+add_vote "┌─ GAME ────────────────" "echo 0"
+add_vote "├ Restart" "restart 15"
+add_vote "├ Go/stop" "pause"
+add_vote "└ Reload server" "reload"
+add_vote "┌─ MAP ─────────────────" "echo 1"
+add_vote "├ dm1" "change_map dm1"
+add_vote "└ dm_demonface" "change_map dm_demonface"
+add_vote "- CTF mode --------------" "clear_votes; exec ctf.cfg"
+
+mod_command "vote" 1
+mod_command "kick" 1
+mod_command "ban" 1
+mod_command "status" 0
+mod_command "say" 0
+mod_command "broadcast" 0
+mod_command "mute" 0
+mod_command "mutes" 0
+mod_command "unmuteid" 0
+mod_command "unmuteip" 0
+mod_command "go" 1
+mod_command "force_vote" 1
+mod_command "logout" 1
+
+#For TW+ only otherwise these are ignored
+sv_go_time 3
+sv_stopgo_feature 0
+sv_anticamper 0
+sv_anticamper_freeze 0
+sv_anticamper_range 250
+sv_xonx_feature 0
