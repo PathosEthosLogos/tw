@@ -5,10 +5,14 @@ sv_rcon_password ""
 sv_rcon_mod_password ""
 
 wa_api_key ""
+wa_map_types fastcap
 wa_auto_add_maps 1
 sv_score web
-
+reload_maplist
+update_map_votes
+wa_map_types fastcap
 sv_gametype fastcap
+
 sv_inactivekick_time 5 #minutes
 sv_inactivekick 2
 sv_timelimit 0
