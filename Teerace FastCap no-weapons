@@ -1,0 +1,23 @@
+sv_name "Pathos Teerace server in Atlanta 2"
+sv_port 8309
+sv_max_clients 16
+sv_rcon_password ""
+sv_rcon_mod_password ""
+
+wa_api_key ""
+wa_auto_add_maps 1
+sv_score web
+
+sv_gametype fastcap-no-weapons
+sv_inactivekick_time 5 #minutes
+sv_inactivekick 2
+sv_timelimit 0
+sv_tournament_mode 1
+sv_powerups 0
+sv_mute_duration 60
+sv_vote_spectate_rejoindelay 1
+sv_vote_kick_min 2
+sv_spamprotection 1
+
+sv_map ctf2
+sv_spectator slots 0
