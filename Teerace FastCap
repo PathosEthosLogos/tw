@@ -10,7 +10,6 @@ wa_map_types fastcap
 wa_auto_add_maps 1
 sv_no_items 0
 sv_score web
-sv_score web
 
 #reload_maplist MUST RUN THIS COMMAND AT THE END?
 
