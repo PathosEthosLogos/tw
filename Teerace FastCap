@@ -3,13 +3,17 @@ sv_port 8308
 sv_max_clients 16
 sv_rcon_password ""
 sv_rcon_mod_password ""
+sv_motd "race.teesites.net"
 
 wa_api_key ""
 wa_map_types fastcap
 wa_auto_add_maps 1
+sv_no_items 0
 sv_score web
-reload_maplist
-update_map_votes
+sv_score web
+
+#reload_maplist MUST RUN THIS COMMAND AT THE END?
+
 wa_map_types fastcap
 sv_gametype fastcap
 
