@@ -1,0 +1,2 @@
+add_vote "Password lock the server" password "PASSWORDHERE"
+add_vote "Remove password for the server" password ""
