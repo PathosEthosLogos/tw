@@ -1,0 +1,77 @@
+# THIS CONFIG IS FOR TW+ MOD, WHICH IS BASICALLY VANILLA WITH EXTRA FEATURES. YOU CAN DOWNLOAD IT HERE: https://www.teeworlds.com/forum/viewtopic.php?id=9431
+sv_name "Pathos CTF (& DM) Atlanta 1"
+sv_port 8303
+sv_register 1
+sv_max_clients 16
+sv_rcon_password ""
+sv_rcon_mod_password ""
+
+#sv_map ctf1; sv_spectator_slots 12; sv_scorelimit 600
+#sv_map ctf3; sv_spectator_slots 10; sv_scorelimit 600
+#sv_map ctf2; sv_spectator_slots 8; sv_scorelimit 600
+sv_map ctf2; sv_spectator_slots 6; sv_scorelimit 1000
+
+sv_gametype CTF+
+sv_inactivekick_time 2 #minutes
+sv_inactivekick 1
+sv_timelimit 0
+sv_tournament_mode 1
+sv_powerups 0
+sv_vote_spectate_rejoindelay 1
+sv_vote_kick_min 2
+sv_mute_duration 0
+sv_chat_max_duplicates -1
+sv_chat_value 1
+sv_chat_threshold 10000
+sv_spamprotection 0
+sv_chat_message_interval 1
+
+add_vote "┌─ GAME ─────────────────" "echo 0"
+add_vote "├ Restart" "restart 15"
+add_vote "├ Go" "sv_stopgo_feature 1; go; sv_stopgo_feature 1"
+add_vote "├ Stop" "sv_stopgo_feature 1; stop; sv_stopgo_feature 1"
+add_vote "├ Shuffle teams" "shuffle_teams"
+add_vote "├ Swap teams" "swap_teams"
+add_vote "└ Reload server" "reload"
+add_vote "┌─ SET UP ────────────────" "echo 1"
+add_vote "├ 2v2 600 points ctf1" "change_map ctf1; sv_spectator_slots 12; sv_scorelimit 600" #vanilla
+add_vote "├ 2v2 600 points ctf1left" "change_map ctf1left; sv_spectator_slots 12; sv_scorelimit 600"
+add_vote "├ 2v2 600 points ctf_aurochs" "change_map ctf_aurochs; sv_spectator_slots 12; sv_scorelimit 600"
+add_vote "├ 3v3 600 points ctf3" "change_map ctf3; sv_spectator_slots 10; sv_scorelimit 600" #vanilla
+add_vote "├ 3v3 600 points ctf_breakofdaytest" "change_map ctf_breakofdaytest; sv_spectator_slots 10; sv_scorelimit 600"
+add_vote "├ 4v4 800 points ctf2" "change_map ctf2; sv_spectator_slots 8; sv_scorelimit 600" #vanilla
+add_vote "├ 4v4 800 points ctf_infiltrate" "change_map ctf_infiltrate; sv_spectator_slots 8; sv_scorelimit 600"
+add_vote "└ 5v5 1000 points ctf2" "change_map ctf2; sv_spectator_slots 6; sv_scorelimit 1000" #vanilla
+add_vote "─ 1v1 DM mode ──────────" "clear_votes; exec dm.cfg"
+
+mod_command "go" 1
+mod_command "stop" 1
+
+mod_command "sv_map" 1
+mod_command "change_map" 1
+mod_command "status" 1
+mod_command "sv_spectator_slots" 1
+mod_command "vote" 1
+mod_command "kick" 1
+mod_command "ban" 1
+mod_command "status" 0
+mod_command "say" 0
+mod_command "broadcast" 0
+mod_command "mute" 0
+mod_command "mutes" 0
+mod_command "unmuteid" 0
+mod_command "unmuteip" 0
+mod_command "force_vote" 1
+mod_command "pause" 1
+mod_command "shuffle_teams" 1
+mod_command "set_team" 1
+mod_command "restart" 1
+mod_command "logout" 1
+
+
+sv_go_time 5
+sv_stopgo_feature 1
+sv_anticamper 0
+sv_anticamper_freeze 0
+sv_anticamper_range 250
+sv_xonx_feature 0
