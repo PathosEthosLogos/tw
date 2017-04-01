@@ -28,10 +28,14 @@ sv_chat_message_interval 1
 
 add_vote "┌─ GAME ─────────────────" "echo 0"
 add_vote "├ Restart" "restart 15"
-add_vote "├ Go" "sv_stopgo_feature 1; go; sv_stopgo_feature 1"
-add_vote "├ Stop" "sv_stopgo_feature 1; stop; sv_stopgo_feature 1"
+#add_vote "├ Go" "sv_stopgo_feature 1; go; sv_stopgo_feature 0" #prevents spam + abuse
+add_vote "├ Go" "go"
+#add_vote "├ Stop" "sv_stopgo_feature 1; stop; sv_stopgo_feature 0" #prevents spam + abuse
+add_vote "├ Stop" "stop"
 add_vote "├ Shuffle teams" "shuffle_teams"
 add_vote "├ Swap teams" "swap_teams"
+add_vote "├ Password lock the server" password "PASSWORDHERE"; sv_name "Pathos CTF (& DM) Atlanta 1 (get pass from Discord)"
+add_vote "├ Remove password for the server" password ""; sv_name "Pathos CTF (& DM) Atlanta 1"
 add_vote "└ Reload server" "reload"
 add_vote "┌─ SET UP ────────────────" "echo 1"
 add_vote "├ 2v2 600 points ctf1" "change_map ctf1; sv_spectator_slots 12; sv_scorelimit 600" #vanilla
