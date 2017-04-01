@@ -29,8 +29,8 @@ add_vote "┌─ GAME ────────────────" "echo 0"
 add_vote "├ Restart" "restart 15"
 add_vote "├ Go" "go"
 add_vote "├ Stop" "stop"
-add_vote "├ Password lock the server" dmlock.cfg
-add_vote "├ Remove password for the server" dmunlock.cfg
+add_vote "├ Password lock the server" exec dmlock.cfg
+add_vote "├ Remove password for the server" exec dmunlock.cfg
 add_vote "└ Reload server" "reload"
 add_vote "┌─ MAP ─────────────────" "echo 1"
 add_vote "├ dm1" "change_map dm1"
