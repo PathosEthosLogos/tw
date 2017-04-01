@@ -1,6 +1,7 @@
 # THIS CONFIG IS FOR TW+ MOD, WHICH IS BASICALLY VANILLA WITH EXTRA FEATURES. YOU CAN DOWNLOAD IT HERE: https://www.teeworlds.com/forum/viewtopic.php?id=9431
 sv_name "Pathos 1v1 DM (& CTF) Atlanta 1"
 sv_port 8303
+password ""
 sv_rcon_password ""
 sv_rcon_mod_password ""
 
